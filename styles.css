@@ -23,8 +23,48 @@ body {
 
 .middle {
   width: 1000px;
+}
+
+.top-nav {
   display: flex;
   gap: 16px;
+}
+
+.hero {
+  display: flex;
+  padding: 108px 0;
+  gap: 24px;
+}
+
+.hero .words {
+  flex: 1;
+}
+
+.hero .image {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.hero .main {
+  font-size: 48px;
+  font-weight: 900;
+  color: #F9FAF8;
+}
+
+.secondary {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+.hero button {
+  background-color: dodgerblue;
+  color: white;
+  padding: 8px 36px;
+  margin: 8px 0;
+  border-radius: 8px;
 }
 
 .header .logo {
@@ -34,9 +74,6 @@ body {
   font-weight: 600;
 }
 
-
 .header a {
-  font-size: 18px;
-  color: #E5E7EB;
   text-decoration-line: none;
 }
