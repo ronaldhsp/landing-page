@@ -28,6 +28,7 @@ body {
 .top-nav {
   display: flex;
   gap: 16px;
+  padding-top: 16px;;
 }
 
 .hero {
