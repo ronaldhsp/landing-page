@@ -14,6 +14,16 @@ body {
 .header {
   display: flex;
   background-color: #1F2937;
+}
+
+.left-gutter,
+.right-gutter {
+  flex: 1;
+}
+
+.middle {
+  width: 1000px;
+  display: flex;
   gap: 16px;
 }
 
