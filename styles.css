@@ -11,8 +11,12 @@ body {
   font-family: Roboto;
 }
 
-.header {
+.header,
+.information {
   display: flex;
+}
+
+.header {
   background-color: #1F2937;
 }
 
@@ -22,7 +26,12 @@ body {
 }
 
 .middle {
+  box-sizing: border-box;
   width: 1000px;
+}
+
+.information .middle {
+  padding: 0 108px;
 }
 
 .top-nav {
@@ -60,6 +69,7 @@ body {
   color: #E5E7EB;
 }
 
+/* TODO: fix button; flatten it and select correct color */
 .hero button {
   background-color: dodgerblue;
   color: white;
@@ -77,4 +87,31 @@ body {
 
 .header a {
   text-decoration-line: none;
+}
+
+.information .title {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1F2937;
+  text-align: center;
+  margin: 32px 0;
+}
+
+.information .images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.information .images .img {
+  width: 150px;
+  height: 150px;
+  border: 4px solid #3882F6;
+  border-radius: 16px;
+  box-sizing: border-box;
+  margin: 8px 0;
+}
+
+.information .pair {
+  width: 150px;
+  text-align: center;
 }
