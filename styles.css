@@ -18,7 +18,8 @@ body {
 
 .header,
 .information,
-.quote {
+.quote,
+.call-to-action {
   display: flex;
 }
 
@@ -37,7 +38,7 @@ body {
 }
 
 .information .middle {
-  padding: 0 108px 72px;
+  padding: 0 104px 72px;
 }
 
 .quote {
@@ -45,7 +46,11 @@ body {
 }
 
 .quote .middle {
-  padding: 72px 108px;
+  padding: 72px 104px;
+}
+
+.call-to-action .middle {
+  padding: 104px 0;
 }
 
 .top-nav {
@@ -56,7 +61,7 @@ body {
 
 .hero {
   display: flex;
-  padding: 108px 0;
+  padding: 104px 0;
   gap: 24px;
 }
 
@@ -83,13 +88,19 @@ body {
   color: #E5E7EB;
 }
 
-/* TODO: fix button; flatten it and select correct color */
-.hero button {
-  background-color: dodgerblue;
+button.sign-up {
+  background-color: #3882F6;
   color: white;
   padding: 8px 36px;
   margin: 8px 0;
   border-radius: 8px;
+  font-weight: bold;
+  border-style: none;
+}
+
+
+.call-to-action button.sign-up {
+  border: 2px solid white;
 }
 
 .header .logo {
@@ -141,4 +152,23 @@ body {
   text-align: right;
   font-size: 24px;
   font-weight: bold;
+}
+
+.call-to-action .container {
+  background-color: #3882F6;
+  border-radius: 16px;
+  padding: 48px 104px;
+  display: flex;
+}
+
+.call-to-action .text {
+  flex: 1;
+}
+
+.call-to-action .text div {
+  color: white;
+}
+
+.call-to-action .text strong {
+  font-size: 24px;
 }
