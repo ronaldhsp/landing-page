@@ -3,6 +3,11 @@
   src: url("Roboto/Roboto-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Roboto-LightItalic";
+  src: url("Roboto/Roboto-LightItalic.ttf") format("truetype");
+}
+
 body {
   margin: 0;
 }
@@ -12,7 +17,8 @@ body {
 }
 
 .header,
-.information {
+.information,
+.quote {
   display: flex;
 }
 
@@ -31,7 +37,15 @@ body {
 }
 
 .information .middle {
-  padding: 0 108px;
+  padding: 0 108px 72px;
+}
+
+.quote {
+  background-color: #E5E7EB;
+}
+
+.quote .middle {
+  padding: 72px 108px;
 }
 
 .top-nav {
@@ -114,4 +128,17 @@ body {
 .information .pair {
   width: 150px;
   text-align: center;
+}
+
+.quote .wise-words {
+  font-size: 36px;
+  font-family: Roboto-LightItalic;
+  color: #1F2937;
+  padding: 16px;
+}
+
+.quote .author {
+  text-align: right;
+  font-size: 24px;
+  font-weight: bold;
 }
